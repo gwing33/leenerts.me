@@ -1,0 +1,53 @@
+/* * *
+ Colors
+ Blue: #2175a4
+ * * */
+body, ul, li, div { padding: 0; margin: 0; list-style: none; }
+
+body { height: 100%; width: 100%; position: relative; background: url('../images/bg.jpg'); }
+
+/* * *
+ Mask - Puts the border around the entire page in a fixed position;
+ * * */
+#mask-top, #mask-right, #mask-left, #mask-bottom { position: fixed; background-color: rgba(100, 100, 100, .5); }
+#mask-top, #mask-bottom { height: 5px; left: 5px; right: 5px; }
+#mask-right, #mask-left { width: 5px; top: 0; bottom: 0;  }
+#mask-top { top: 0; }
+#mask-bottom { bottom: 0; }
+#mask-right { right: 0; }
+#mask-left { left: 0; }
+
+/* * *
+ Header
+ * * */
+#header-center { margin: 0 auto; }
+#header-center, #header-bg, #its-me { width: 960px }
+
+#header { position: fixed; }
+
+#header-content { position: relative; }
+
+#its-me, #header-bg { position: absolute; }
+#header-bg {  height: 327px; margin-top: 2px; background-color: #2175a4; }
+#its-me {  height: 329px; margin-left: -55px; padding: 0 55px; background: url('../images/header_bg.png') no-repeat; }
+
+/* * *
+ Overlay
+ * * */
+#overlay { position: relative; width: 892px; margin: 0 auto; }
+#overlay-inner { position: absolute; width: 892px; height: 329px; margin: 300px 0 0; background-color: red; }
+
+#overlay-inner.fixed { position: fixed; }
+
+/* * *
+ Linular
+ * * */
+.linular { position: absolute; right: 20px; width: 30px; height: 100%; background-color: rgba(255, 255, 255, .5); }
+
+
+
+
+/* * *
+ Temp Buffer
+ * * */
+#buffer { height: 5000px; }

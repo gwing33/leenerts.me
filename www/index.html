@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title>gerald.leenerts.me</title>
+  <link href='./css/screen.css' type='text/css' rel='stylesheet' />
+  
+  <script src="./js/jquery.js"></script>
+  <script src="./js/underscore-min.js"></script>
+  <script src="./js/backbone-min.js"></script>
+  
+  <script src="./js/application.js"></script>
+  <script>
+    var bg_parallax;
+
+    $(function() {
+      back_parallax = $('#header').parallapse({'percent' : 50});
+      //front_parallax = $('#overlay-inner').parallapse();
+      //console.log(parallapse);
+    });
+  </script>
+</head>
+<body>
+  
+  <div class='linular_relative'>
+    <div class='linular'></div>
+  </div>
+  
+  <div id='header-center'>
+    <div id='header'>
+      <div id='header-content'>
+        <div id='header-bg'></div>
+        <div id='its-me'>
+          gerald.leenerts
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <ul id='mask'>
+    <li id='mask-top'></li>
+    <li id='mask-right'></li>
+    <li id='mask-left'></li>
+    <li id='mask-bottom'></li>
+  </ul>
+  
+  <div id='overlay'>
+    <div id='overlay-inner'>
+    </div>
+  </div>
+  
+  <div id='buffer'></div>
+  
+</body>
