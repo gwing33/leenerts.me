@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>gerald.leenerts.me</title>
+  <link href='./css/reset.css' type='text/css' rel='stylesheet' />
   <link href='./css/screen.css' type='text/css' rel='stylesheet' />
   
   <script src="./js/jquery.js"></script>
@@ -12,30 +13,34 @@
     var bg_parallax;
 
     $(function() {
-      back_parallax = $('#header').parallapse({'percent' : 50});
-      //front_parallax = $('#overlay-inner').parallapse();
-      //console.log(parallapse);
+      back_parallax = $('#header').parallapse({'percent' : 60});
     });
   </script>
 </head>
 <body>
   
-  <div class='linular_relative'>
-    <div class='linular'></div>
+  <div class='linular_container'>
+    <div class='linular_relative'>
+      <div class='first linular'></div>
+      <div class='second linular'></div>
+    </div>
+    
+    <div class='third linular'></div>
+    <div class='fourth linular'></div>
+    <div class='fifth linular'></div>
+    <div class='sixth linular'></div>
   </div>
   
   <div id='header-center'>
     <div id='header'>
       <div id='header-content'>
-        <div id='header-bg'></div>
+        <div id='header-bg'>
+        </div>
         <div id='its-me'>
-          gerald.leenerts
         </div>
       </div>
     </div>
   </div>
-  
-  
   
   <ul id='mask'>
     <li id='mask-top'></li>
@@ -45,7 +50,9 @@
   </ul>
   
   <div id='overlay'>
-    <div id='overlay-inner'>
+    <div id='overlay-shadow'>
+      <div id='overlay-inner'>
+      </div>
     </div>
   </div>
   

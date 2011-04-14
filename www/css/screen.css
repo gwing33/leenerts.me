@@ -9,7 +9,7 @@ body { height: 100%; width: 100%; position: relative; background: url('../images
 /* * *
  Mask - Puts the border around the entire page in a fixed position;
  * * */
-#mask-top, #mask-right, #mask-left, #mask-bottom { position: fixed; background-color: rgba(100, 100, 100, .5); }
+#mask li { position: fixed; background-color: rgba(100, 100, 100, .5); }
 #mask-top, #mask-bottom { height: 5px; left: 5px; right: 5px; }
 #mask-right, #mask-left { width: 5px; top: 0; bottom: 0;  }
 #mask-top { top: 0; }
@@ -34,16 +34,31 @@ body { height: 100%; width: 100%; position: relative; background: url('../images
 /* * *
  Overlay
  * * */
-#overlay { position: relative; width: 892px; margin: 0 auto; }
-#overlay-inner { position: absolute; width: 892px; height: 329px; margin: 300px 0 0; background-color: red; }
-
+#overlay { position: relative; width: 1060px; margin: 0 auto; }
+#overlay-shadow { 
+  position: absolute; 
+  width: 1060px; height: 430px; 
+  margin: 225px 0 0 7px;
+  background: url('../images/overlay_shadow.png') no-repeat; 
+  z-index: 500; 
+}
+#overlay-inner { width: 894px; height: 342px; margin: 24px 91px 0 77px; z-index: 500; 
+  background: url('../images/overlay_bg.jpg') repeat-x, url('../images/overlay_shadow_bg.png') no-repeat; 
+}
 #overlay-inner.fixed { position: fixed; }
 
 /* * *
  Linular
  * * */
-.linular { position: absolute; right: 20px; width: 30px; height: 100%; background-color: rgba(255, 255, 255, .5); }
-
+.linular_container { width: 960px; margin: 0 auto; } /* Center Align the lines */
+.linular_relative { width: 960px; position: absolute; top: 0; bottom: 0; } /* Having this container keeps the left/right position but breaks the top bottom positioning */
+.linular { position: absolute; background-color: rgba(255, 255, 255, .25); }
+.first { width: 30px; top: 0; bottom: 0; right: 20px; z-index: 1000; }
+.second { width: 30px; top: 0; bottom: 0; left: 20px; }
+.third { height: 50px; top: 0px; left: 0; right: 0; }
+.fourth { height: 3px; top: 56px; left: 0; right: 0; }
+.fifth { height: 10px; top: 288px; left: 0; right: 0; }
+.sixth { height: 50px; top: 305px; left: 0; right: 0; }
 
 
 
