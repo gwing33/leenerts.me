@@ -46,6 +46,10 @@ body { height: 100%; width: 100%; position: relative; background: url('../images
   background: url('../images/overlay_bg.jpg') repeat-x, url('../images/overlay_shadow_bg.png') no-repeat; 
 }
 #overlay-inner.fixed { position: fixed; }
+  .line-down { background: url('../images/line_down.png') repeat-y; width: 10px; height: 342px; position: absolute; left: 346px; }
+  .media {}
+  .media ul { width: 431px; height: 201px; display: block; background: url('../images/media_bg.jpg') no-repeat; position: relative; top: 72px; margin: 0 auto; }
+  .media ul li { padding: 15px; }
 
 /* * *
  Linular
