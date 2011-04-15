@@ -54,15 +54,24 @@ body { height: 100%; width: 100%; position: relative; background: url('../images
 .linular_relative { width: 960px; position: absolute; top: 0; bottom: 0; } /* Having this container keeps the left/right position but breaks the top bottom positioning */
 .linular { position: absolute; background-color: rgba(255, 255, 255, .25); }
 .first { width: 30px; top: 0; bottom: 0; right: 20px; z-index: 1000; }
-.second { width: 30px; top: 0; bottom: 0; left: 20px; }
+.second { width: 30px; top: 0; bottom: 0; left: 20px; z-index: 250; }
 .third { height: 50px; top: 0px; left: 0; right: 0; }
 .fourth { height: 3px; top: 56px; left: 0; right: 0; }
 .fifth { height: 10px; top: 288px; left: 0; right: 0; }
 .sixth { height: 50px; top: 305px; left: 0; right: 0; }
 
+.dark_gray { position: absolute; top: 740px; left: 0; right: 0; height: 500px; }
+.dark_gray div { position: absolute; width: 100%; }
+.dark_gray .top { top: 0; background: url('../images/top_gray.png') repeat-x; height: 10px; }
+.dark_gray .mid { top: 10px; bottom: 10px; background: url('../images/mid_gray.png'); }
+.dark_gray .bottom { bottom: 0; background: url('../images/bottom_gray.png') repeat-x; height: 10px; }
 
+.grate { background: url('../images/grate.jpg'); height: 49px; width: 30px; top: 740px; position: absolute; z-index: 100; }
+.grate.left { left: 20px; }
+.grate.right { right: 20px; }
 
-/* * *
- Temp Buffer
- * * */
-#buffer { height: 5000px; }
+.nub { background: url('../images/bg.jpg'); width: 30px; height: 15px; position: absolute; top: 1225px; z-index: 100; }
+.nub.left { left: 20px; }
+.nub.right { right: 20px; height: 55px; top: 1185px; }
+
+#buffer { height: 1000px; }
